@@ -1,0 +1,36 @@
+{
+  "name": "date-utilz",
+  "version": "0.0.1",
+  "description": "Date Utilities for JavaScript.",
+  "main": "lib/date-utilz.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/MaddHacker/date-utilz.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MaddHacker/date-utilz/issues",
+    "email": "hacker@maddhacker.com"
+  },
+  "keywords": [
+    "dates",
+    "date utilities",
+    "date utils",
+    "date-utils",
+    "date management",
+    "date format",
+    "formatting"
+  ],
+  "author": "MaddHacker <hacker@maddhacker.com> (http://www.maddhacker.com)",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/MaddHacker/date-utilz#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^18.1.0"
+  },
+  "jest": {
+    "verbose": true
+  }
+}
