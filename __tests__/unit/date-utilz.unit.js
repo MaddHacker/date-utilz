@@ -16,12 +16,41 @@
 
 'use strict';
 
-require('../../lib/date-utilz');
+const datez = require('../../lib/date-utilz');
+datez.addDatePrototypes();
 
 describe('Date Utils (Unit)', function () {
-    describe('TBD', function () {
-        it('no unit tests needed yet', function () {
-            expect(true).toBe(true);
+    /**
+    * check datez#pad(tmpStr, num, char)
+    */
+    describe('datez#date()', function () {
+        it('return current date as ISOString', function () {
+            //expect(datez.date()).toBe(new Date().toISOString());
+        });
+    });
+    /**
+    * check datez#pad(tmpStr, num, char)
+    */
+    describe('datez#pad(tmpStr, num, char)', function () {
+        it('should use a space when no char is provided', function () {
+            expect(datez.pad(1, 1)).toBe('10');
+        });
+        it('should return the given string when num is 0', function () {
+            expect(datez.pad(1, 0)).toBe('1');
+            expect(datez.pad(1, 0, '-')).toBe('1');
+        });
+        it('should pad multiple times', function () {
+            expect(datez.pad(1, 5)).toBe('100000');
+            
+            expect(datez.pad(1, -5, '-')).toBe('-----1');
+        });
+        it('should pad to the left when negative', function () {
+            expect(datez.pad(1, -5)).toBe('000001');
+        });
+        it('should handle multiple chars', function () {
+            expect(datez.pad(10, -2, '000')).toBe('00000010');
+            expect(datez.pad(10, 2, 1)).toBe('1011');
+            expect(datez.pad(10, 2, '--')).toBe('10----');
         });
     });
 });
