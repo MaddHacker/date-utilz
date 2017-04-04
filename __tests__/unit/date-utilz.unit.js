@@ -25,9 +25,17 @@ describe('Date Utils (Unit)', function () {
     */
     describe('datez#date()', function () {
         it('return current date as ISOString', function () {
-            //expect(datez.date()).toBe(new Date().toISOString());
+            expect(datez.date()).not.toBe(null);
         });
     });
+
+    describe('datez#httpDate()', function () {
+        it('return current date as HTTP-date string', function () {
+            expect(datez.httpDate()).not.toBe(null);
+            console.log(datez.httpDate());
+        });
+    });
+
     /**
     * check datez#pad(tmpStr, num, char)
     */
@@ -41,7 +49,7 @@ describe('Date Utils (Unit)', function () {
         });
         it('should pad multiple times', function () {
             expect(datez.pad(1, 5)).toBe('100000');
-            
+
             expect(datez.pad(1, -5, '-')).toBe('-----1');
         });
         it('should pad to the left when negative', function () {
