@@ -18,9 +18,9 @@
 
 require('../../lib/date-utilz');
 
-describe('Date Utils (Integration)', function () {
-    describe('TBD', function () {
-        it('no integration tests needed yet', function () {
+describe('Date Utils (Integration)', () => {
+    describe('TBD', () => {
+        it('no integration tests needed yet', () => {
             expect(true).toBe(true);
         });
     });

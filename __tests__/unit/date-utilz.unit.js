@@ -19,18 +19,18 @@
 const datez = require('../../lib/date-utilz');
 datez.addDatePrototypes();
 
-describe('Date Utils (Unit)', function () {
+describe('Date Utils (Unit)', () => {
     /**
     * check datez#pad(tmpStr, num, char)
     */
-    describe('datez#date()', function () {
-        it('return current date as ISOString', function () {
+    describe('datez#date()', () => {
+        it('return current date as ISOString', () => {
             expect(datez.date()).not.toBe(null);
         });
     });
 
-    describe('datez#httpDate()', function () {
-        it('return current date as HTTP-date string', function () {
+    describe('datez#httpDate()', () => {
+        it('return current date as HTTP-date string', () => {
             expect(datez.httpDate()).not.toBe(null);
             console.log(datez.httpDate());
         });
@@ -39,23 +39,23 @@ describe('Date Utils (Unit)', function () {
     /**
     * check datez#pad(tmpStr, num, char)
     */
-    describe('datez#pad(tmpStr, num, char)', function () {
-        it('should use a space when no char is provided', function () {
+    describe('datez#pad(tmpStr, num, char)', () => {
+        it('should use a space when no char is provided', () => {
             expect(datez.pad(1, 1)).toBe('10');
         });
-        it('should return the given string when num is 0', function () {
+        it('should return the given string when num is 0', () => {
             expect(datez.pad(1, 0)).toBe('1');
             expect(datez.pad(1, 0, '-')).toBe('1');
         });
-        it('should pad multiple times', function () {
+        it('should pad multiple times', () => {
             expect(datez.pad(1, 5)).toBe('100000');
 
             expect(datez.pad(1, -5, '-')).toBe('-----1');
         });
-        it('should pad to the left when negative', function () {
+        it('should pad to the left when negative', () => {
             expect(datez.pad(1, -5)).toBe('000001');
         });
-        it('should handle multiple chars', function () {
+        it('should handle multiple chars', () => {
             expect(datez.pad(10, -2, '000')).toBe('00000010');
             expect(datez.pad(10, 2, 1)).toBe('1011');
             expect(datez.pad(10, 2, '--')).toBe('10----');
