@@ -4,7 +4,7 @@
   "description": "Date Utilities for JavaScript.",
   "main": "lib/date-utilz.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage --colors"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,7 @@
     "date format",
     "formatting"
   ],
-  "author": "MaddHacker <hacker@maddhacker.com> (http://www.maddhacker.com)",
+  "author": "MaddHacker <hacker@maddhacker.com> (https://www.maddhacker.com)",
   "license": "Apache-2.0",
   "homepage": "https://github.com/MaddHacker/date-utilz#readme",
   "dependencies": {
