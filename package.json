@@ -24,6 +24,10 @@
     "formatting"
   ],
   "author": "MaddHacker <hacker@maddhacker.com> (https://www.maddhacker.com)",
+  "contributors": [
+    "MaddHacker <hacker@maddhacker.com> (https://www.maddhacker.com)",
+    "The Fiery Dev <thefierydev@gmail.com> (https://www.thefierydev.com)"
+  ],
   "license": "Apache-2.0",
   "homepage": "https://github.com/MaddHacker/date-utilz#readme",
   "engines": {
@@ -34,7 +38,7 @@
     "string-utilz": "^1.3.0"
   },
   "devDependencies": {
-    "jest": "^19.0.2"
+    "jest": "^22.4.4"
   },
   "jest": {
     "verbose": true
