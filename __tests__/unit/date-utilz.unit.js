@@ -61,4 +61,35 @@ describe('Date Utils (Unit)', () => {
             expect(datez.pad(10, 2, '--')).toBe('10----');
         });
     });
+
+    // /**
+    // * check datez#fmt(args...) with indicies
+    // */
+
+    // describe('#fmt(args...) using indicies', () => {
+    //     // it('should return the same string when there are no fmt args', () => {
+    //     //     expect(datez.fmt('Sat', 'Sep')).toBe('Sun, 27 May 2018 17:52:00 MDT');
+    //     // });
+    //     // it('should return the same string when there are no fmt args', () => {
+    //     //     expect('Sun, 27 May 2018 17:52:00 MDT'.fmt('Sat', 'Sep')).toBe('Sun, 27 May 2018 17:52:00 MDT');
+    //     // });
+    //     // it('should not replace open "{" at the beginning', () => {
+    //     //     expect('%{0}, 27 %{s 2018 17:52:00 MDT'.fmt('Sun', 'May')).toBe('Sun, 27 %{s 2018 17:52:00 MDT');
+    //     // });
+    //     // it('should not replace open "{" all over the place', () => {
+    //     //     expect('%{0}, 27 %{1 2018 17:52:00 %{s}'.fmt('Sun', 'May', 'MDT')).toBe('Sun, 27 %{s 2018 17:52:00 Sun');
+    //     // });
+    //     // it('should support indicies in the "{}"', () => {
+    //     //     expect('%{0}, 27 %{1} 2018 17:52:00 %{2}'.fmt('Sun', 'May', 'MDT')).toBe('Sun, 27 May 2018 17:52:00 MDT');
+    //     // });
+    //     // it('should support indicies out of order in the "{}"', () => {
+    //     //     expect('%{2}, 27 %{0} 2018 17:52:00 %{1}'.fmt('Sun', 'May', 'MDT')).toBe('MDT, 27 Sat 2018 17:52:00 May');
+    //     // });
+    //     // it('should support indicies and the "s" mixed in the "{}"', () => {
+    //     //     expect('%{0}, 27 %{s} 2018 17:52:00 %{2}'.fmt('Sun', 'May', 'MDT')).toBe('Sun, 27 Sun 2018 17:52:00 MDT');
+    //     // });
+    //     // it('should support indicies out of order and the "s" mixed in the "{}"', () => {
+    //     //     expect('%{2}, 27 %{s} 2018 17:52:00 %{0}'.fmt('Sun', 'May', 'MDT')).toBe('MDT, 27 Sun 2018 17:52:00 Sun');
+    //     // });
+    // });
 });
