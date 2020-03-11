@@ -1,3 +1,6 @@
+# 2020-03-10 - v0.0.3
+- Update dependencies and `.travis.yml` files
+
 # 2017-04-03 - v0.0.2
 - Start to support some complex date formatting
 - Start to look at I18N
